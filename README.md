@@ -1,46 +1,43 @@
-# CryptoTrackerBot
-CryptoTrackerBot - check cryptocurrencies prices on telegram
+# Fotoğraf Link
+Fully working VC (user)Bot, based on py-tgcalls and py-tgcalls-wrapper with minimal [features](#TODO).   
 
-## SUPPORTED COMMANDS:
-```
-/price - return price of crypto
-/help - return help message
-/rank - return coins rank
-/graph - return coins graph
-```
-_Note: If this bot is added in groups as admin, in order to keep the chat clean of spam, after few seconds it deletes both the command issued by the user and the message sent by the bot._
 
-## Screenshots:
-<p align="left">
-<img src="../master/resources/screenshots/screenshot1.jpg" width="250">
-<img src="../master/resources/screenshots/screenshot2.jpg" width="250">
-</p>
+## Deploying
+* To heroku:   
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](http://heroku.com/deploy?template=https://github.com/kenanismayilov335/CryptoTrackerBot)   
 
-## How to install:
+* Local machine/VPS:   
+`git clone https://github.com/kenanismayilov335/photolink`   
+`pip install -r requirements.txt`   
+`apt-get install ffmpeg`   
+`touch .env && nano .env`, fill in the vars as in [.env.sample](./.env.sample)   
+`python bot.py`   
 
-### On Linux:
+## SESSION
+Either run [sessiongen.py](./sessiongen.py) locally or run it on [repl.it by clicking here.](https://replit.com/@xditya/PyroSessionGen)
+## Commands:   
+- `!on` - Check if the (user)bot is online.   
+- `!help` - Help message.   
+- `!stream` - Either give a youtube URL or reply to a telegram file to play it.   
+- `!pause` - Pause the stream.   
+- `!resume` - Yes, resume.   
 
-- Move to the path where you want to create the virtualenv directory
-```
-cd path
-```
-- Create a folder containing the env named `ctbenv`
-```
-virtualenv -p python3 ctbenv 
-```
-- Install the bot from the zip
-```
-ctbenv/bin/pip install https://github.com/91dariodev/cryptotrackerbot/archive/master.zip
-```
-- Run the bot. The first parameter of the command is the token.
-```
-ctbenv/bin/cryptotrackerbot token
-```
-- To upgrade the bot:
-```
-ctbenv/bin/pip install --upgrade https://github.com/91dariodev/cryptotrackerbot/archive/master.zip
-```
-- To delete everything:
-```
-rm -rf ctbenv
-```
+## Support
+- [@BotzHub](https://t.me/BotzHubChat)   
+
+
+## TODO
+(Contributions accepted, I'm lazy af.)    
+- A queue system.   
+- Play with song name.   
+- Auto-leave VC on song end.   
+- JoinVC/LeaveVC.   
+- Updater.   
+
+
+## Credits
+- [pytgcalls](https://github.com/pytgcalls/pytgcalls)   
+- [pytgcalls-wrapper](https://github.com/callsmusic/pytgcalls-wrapper)   
+- [Pyrogram](https://github.com/pyrogram/pyrogram)   
+- [Me](https://github.com/xditya)   
+- Everyone who [contributed](https://github.com/xditya/VCBot/graphs/contributors).
