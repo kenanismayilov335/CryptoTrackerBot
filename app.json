@@ -5,11 +5,21 @@
         "telegram",
         "vc bot"
     ],
-    "repository": "https://github.com/kenanismayilov335/photolink",
+    "repository": "https://github.com/kenanismayilov335/CryptoTrackerBot",
     "success_url": "https://t.me/RobotRoom",
     "stack": "container",
     "env": {
-         "bot_token": {
+        "API_ID": {
+            "description": "API İD GÖNDERİN",
+            "value": "",
+            "required": false
+        },
+        "API_HASH": {
+            "description": "API HASH GÖNDERİN",
+            "value": "",
+            "required": false
+        },
+        "bot_token": {
             "description": "Bot Tokeni Gönderin.",
             "value": "",
             "required": true
